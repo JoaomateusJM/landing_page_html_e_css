@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NeuroCore - Sua mente, sem limites</title>
+  <style>
+    /* Paletas de cores*/
+    :root {
+      --preto-neural: #0b0c10;
+      --azul-sinaptico: #00bcd4;
+      --branco-plasma: #f0f8ff;
+      --fundo-dark: #1a1a1a;
+      --cinza-texto: #ccc;
+    }
+
+    /* Estilo base da página: fundo escuro e fonte padrão */
+    body {
+      margin: 0;
+      font-family: "Segoe UI", sans-serif;
+      background-color: var(--fundo-dark);
+      color: var(--cinza-texto);
+    }
+
+    /* Cabeçalho: cor de fundo preta, centralizado, com espaçamento */
+    header {
+      background-color: var(--preto-neural);
+      padding: 2rem;
+      text-align: center;
+    }
+
+    /* Título do cabeçalho com cor azul vibrante */
+    header h1 {
+      color: var(--azul-sinaptico);
+      font-size: 2.5rem;
+    }
+
+    /* Subtítulo em branco para contraste no cabeçalho */
+    header p {
+      font-size: 1.2rem;
+      color: var(--branco-plasma);
+    }
+
+    /* Seções com espaçamento e limite de largura centralizada */
+    section {
+      padding: 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    /* Títulos secundários com cor azul e borda inferior para destaque */
+    h2 {
+      color: var(--azul-sinaptico);
+      border-bottom: 1px solid var(--azul-sinaptico);
+      padding-bottom: 0.5rem;
+    }
+
+    /* Grid responsivo para cards e imagens, ajusta o número de colunas conforme largura */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      margin-top: 1.5rem;
+    }
+
+    /* Cards com fundo escuro, cantos arredondados e sombra suave azulada */
+    .card {
+      background-color: #222;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 188, 212, 0.2);
+    }
+
+    /* Título dos cards em branco para melhor legibilidade */
+    .card h3 {
+      color: var(--branco-plasma);
+      margin-top: 0;
+    }
+
+    /* Rodapé simples com fundo quase preto, texto centralizado */
+    footer {
+      background-color: #111;
+      color: var(--cinza-texto);
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    /* Lista com recuo padrão para facilitar leitura */
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    /* Placeholder para imagens quando não carregadas, estilizado para combinar com tema */
+    .img-placeholder {
+      background-color: #333;
+      height: 200px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--cinza-texto);
+      font-style: italic;
+    }
+
+    /* Imagens de visualização com tamanho fixo, arredondadas e sombra para destaque */
+    .visual-img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 188, 212, 0.3);
+    }
+
+    /* Ajuste para telas menores: diminui tamanho do título e das imagens */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      .visual-img {
+        height: 150px;
+      }
+    }
+
+    /* Grupo de botões de rádio estilizados como botões com espaçamento */
+    .radio-group {
+      display: flex;
+      gap: 1.5rem;
+      margin-top: -0.5rem;
+      margin-bottom: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    /* Labels dos rádios com background, arredondados e interação visual */
+    .radio-group label {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      background-color: #222;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      cursor: pointer;
+      box-shadow: 0 0 5px rgba(0, 188, 212, 0.2);
+      color: var(--branco-plasma);
+      font-weight: 500;
+      transition: all 0.2s ease-in-out;
+    }
+
+    /* Input do tipo rádio com cor personalizada e cursor pointer */
+    .radio-group input[type="radio"] {
+      accent-color: var(--azul-sinaptico);
+      cursor: pointer;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Cabeçalho principal com título e slogan -->
+  <header>
+    <h1>NeuroCore</h1>
+    <p>"Sua mente, sem limites"</p>
+  </header>
+
+  <!-- Seção de descrição geral do produto -->
+  <section>
+    <h2>Descrição</h2>
+    <p>
+      NeuroCore é um chip intracraniano minimamente invasivo que monitora, interpreta e potencializa a atividade cerebral em tempo real. Ele permite intervenções inteligentes para foco, controle de estresse, estímulo cognitivo e integração com interfaces digitais — tudo controlado por IA e sincronizado com dispositivos externos. 
+    </p>
+  </section>
+
+  <!-- Seção com vantagens competitivas em formato de cards -->
+  <section>
+    <h2>Vantagens Competitivas</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Leitura e estímulo cerebral</h3>
+        <p>Interface bidirecional para interpretar sinais neurais e aplicar microestimulações personalizadas</p>
+      </div>
+      <div class="card">
+        <h3>Discreto e contínuo</h3>
+        <p>Implante leve, invisível e com autonomia energética via recarga sem fio</p>
+      </div>
+      <div class="card">
+        <h3>IA cognitiva personalizada</h3>
+        <p>Algoritmo que aprende o padrão cerebral do usuário e se adapta para otimizar desempenho mental</p>
+      </div>
+      <div class="card">
+        <h3>Integração digital</h3>
+        <p>Permite controlar dispositivos (PC, smartphone, IoT) com a mente, por meio de padrões neurais</p>
+      </div>
+      <div class="card">
+        <h3>Aplicações clínicas e de performance</h3>
+        <p>Indicado tanto para pacientes neurológicos quanto para profissionais e atletas</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção listando funcionalidades técnicas do produto -->
+  <section>
+    <h2>Funcionalidades e Recursos</h2>
+    <ul>
+      <li>Eetrodos de alta resolução (EEG intracraniano e estimulação elétrica transcraniana)</li>
+      <li>Comunicação via chip Bluetooth Neural + protocolo de segurança criptografada</li>
+      <li>Processador neuromórfico dedicado para análise local de sinais cerebrais</li>
+      <li>Aplicativo de interface para configuração, histórico e feedback cognitivo</li>
+      <li>Estímulo personalizado para foco, relaxamento, criatividade ou controle motor</li>
+      <li>Modo silencioso para descanso ou sono profundo (neuroestimulação slow-wave)</li>
+      <li>Atualizações de firmware OTA com novos recursos cognitivos</li>
+      <li>Suporte a integração com próteses neurais ou AR/VR</li>
+    </ul>
+  </section>
+
+  <!-- Seção com base tecnológica do produto -->
+  <section>
+    <h2>Base Tecnológica</h2>
+    <ul>
+      <li><strong>Hardware:</strong>chip neuromórfico (inspirado em arquitetura do cérebro), sensores intracorticais biocompatíveis, antena de recarga indutiva</li>
+      <li><strong>Software:</strong>backend seguro em nuvem (HIPAA/GDPR compliant), IA embarcada com modelos federados, compatível com Android/iOS/Web</li>
+      <li><strong>Escalabilidade:</strong>arquitetura modular com SDK para terceiros, integração via API para neuroaplicações, escalável para diferentes níveis de uso (clínico, pessoal, industrial)</li>
+    </ul>
+  </section>
+
+  <!-- Seção público-alvo detalhado -->
+  <section>
+    <h2>Público-Alvo</h2>
+    <ul>
+      <li>Profissionais de elite (pilotos, operadores, executivos de alto nível)</li>
+      <li>Pesquisadores e biohackers</li>
+      <li>Pacientes com déficit cognitivo ou doenças neurodegenerativas</li>
+      <li>Desenvolvedores de tecnologias imersivas (AR/VR, BCI)</li>
+      <li>Atletas de alta performance e gamers competitivos</li>
+    </ul>
+  </section>
+
+  <!-- Seção com imagens ilustrativas, em grid responsivo -->
+  <section>
+    <h2>Visuais e Aplicações</h2>
+    <div class="grid">
+   <!--As imagens foram adicionadas após o envio do documento-->     
+      <img class="visual-img" src="https://th.bing.com/th/id/OIP.UO6tIBk_7vH5ljPh-Fs4SwHaEK?r=0&w=1200&h=675&rs=1&pid=ImgDetMain" alt="Imagem 1">
+      <img class="visual-img" src="https://dwgyu36up6iuz.cloudfront.net/heru80fdn/image/upload/c_fill,d_placeholder_wired.png,fl_progressive,g_face,h_1080,q_80,w_1920/v1646757436/wired_wired-news-and-science-the-science-behind-elon-musks-neuralink-brain-chip.jpg?mbid=social_retweet" alt="Imagem 2">
+      <img class="visual-img" src="https://evoluapulse.com/wp-content/uploads/2024/01/Sem-Titulo-23.webp" alt="Imagem 3">
+    </div>
+  </section>
+
+  <!-- Formulário de contato, com campos para dados pessoais e mensagem -->
+  <section>
+    <h2>Entre em Contato</h2>
+    <form action="#" method="post" style="display: flex; flex-direction: column; gap: 1rem; max-width: 600px; margin: auto;">
+      <label for="nome">Nome</label>
+      <input type="text" id="nome" name="nome" required style="padding: 0.8rem; border-radius: 5px; border: none; background-color: #333; color: #fff;">
+  
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required style="padding: 0.8rem; border-radius: 5px; border: none; background-color: #333; color: #fff;">
+
+      <label for="telefone">Telefone</label>
+      <input type="number" id="telefone" placeholder="(35) 9888-8888" name="telefone" required style="padding: 0.8rem; border-radius: 5px; border: none; background-color: #333; color: #fff;">
+
+      <label for="idade">idade (apenas +18)</label>
+      <input type="number" id="idade" name="idade" required style="padding: 0.8rem; border-radius: 5px; border: none; background-color: #333; color: #fff;">
+  
+      <p>Gênero</p>
+      <div class="radio-group">
+        <label>
+          <input type="radio" name="genero" id="masc" value="masculino">
+          Masculino
+        </label>
+        <label>
+          <input type="radio" name="genero" id="fem" value="feminino">
+          Feminino
+        </label>
+        <label>
+          <input type="radio" name="genero" id="outro" value="outro">
+          Outro
+        </label>
+      </div>
+      
+      <label for="areas">Areas da Ciencia</label>
+            <select id="areas" name="areas" required style="padding: 0.8rem; border-radius: 5px; border: none; background-color: #333; color: #fff;">
+                <option value="" disabled selected>Selecione a área da biologia</option>
+                <option value="genetica">Genética</option>
+                <option value="biologia-molecular">Biologia Molecular</option>
+                <option value="ecologia">Ecologia</option>
+                <option value="zoologia">Zoologia</option>
+                <option value="botanica">Botânica</option>
+                <option value="microbiologia">Microbiologia</option>
+                <option value="biotecnologia">Biotecnologia</option>
+            </select>
+        </label>
+
+      <label for="mensagem">Mensagem</label>
+      <textarea id="mensagem" name="mensagem" rows="5" required style="padding: 0.8rem; border-radius: 5px; border: none; background-color: #333; color: #fff;"></textarea>
+        
+      <button type="submit" style="padding: 1rem; background-color: var(--azul-sinaptico); border: none; color: var(--preto-neural); font-weight: bold; border-radius: 5px; cursor: pointer;">
+        Enviar
+      </button>
+    </form>
+  </section>
+
+  <!-- Rodapé com direitos autorais -->
+  <footer>
+    &copy; 2025 NeuroCore. Todos os direitos reservados.
+  </footer>
+
+</body>
+</html>
